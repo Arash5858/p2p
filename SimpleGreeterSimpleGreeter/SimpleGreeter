@@ -1,0 +1,50 @@
+SimpleGreeter/
+│
+├── greeter.py
+├── README.md
+└── .gitignore
+def greet(name: str) -> str:
+    """
+    Returns a greeting message for the given name.
+    """
+    return f"Hello, {name}! Welcome to SimpleGreeter."
+
+
+def main():
+    user_name = input("Enter your name: ").strip()
+    if not user_name:
+        print("Name cannot be empty.")
+        return
+
+    message = greet(user_name)
+    print(message)
+
+
+if __name__ == "__main__":
+    main()
+# SimpleGreeter
+
+SimpleGreeter is a minimal Python command-line application that greets the user by name.
+
+## Features
+- Clean and readable code
+- Beginner-friendly structure
+- Ready to be extended
+
+## Requirements
+- Python 3.8+
+
+## Usage
+```bash
+python greeter.py
+Enter your name: Alice
+Hello, Alice! Welcome to SimpleGreeter.
+
+---
+
+## .gitignore
+```gitignore
+__pycache__/
+*.pyc
+.env
+
