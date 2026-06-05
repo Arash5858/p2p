@@ -39,7 +39,9 @@ SimpleGreeter is a minimal Python command-line application that greets the user 
 python greeter.py
 Enter your name: Alice
 Hello, Alice! Welcome to SimpleGreeter.
-
+    Returns a greeting message for the given name.
+    """
+    return f"Hello, {name}! Welcome to SimpleGreeter."
 ---
 
 ## .gitignore
