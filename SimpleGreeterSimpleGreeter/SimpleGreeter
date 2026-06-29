@@ -7,18 +7,7 @@ def greet(name: str) -> str:
     """
     Returns a greeting message for the given name.
     """
-    return f"Hello, {name}! Welcome to SimpleGreeter."
-
-
-def main():
-    user_name = input("Enter your name: ").strip()
-    if not user_name:
-        print("Name cannot be empty.")
-        return
-
-    message = greet(user_name)
-    print(message)
-
+    return f"Hello, {name}! Welcome to SimpleGreeter.
 
 if __name__ == "__main__":
     main()
@@ -34,6 +23,14 @@ SimpleGreeter is a minimal Python command-line application that greets the user 
 ## Requirements
 - Python 3.8+
 
+def main():
+    user_name = input("Enter your name: ").strip()
+    if not user_name:
+        print("Name cannot be empty.")
+        return
+
+    message = greet(user_name)
+    print(message)
 ## Usage
 ```bash
 python greeter.py
